@@ -5,3 +5,18 @@
 % If you want to split the blueprint content into several files then
 % the current file can be a simple sequence of \input. Otherwise It
 % can start with a \section or \chapter for instance.
+
+\chapter*{Overview}
+
+This Lean Blueprint seeks to be a guide towards the development of a formal proof of Theorem 8.2 of "Proximity Gaps for Reed Solomon Codes" by Ben-Sasson et al.
+
+\begin{theorem} [Ben-Sasson et al. 2020 Thm 8.2]
+  (Batched FRI Soundess)
+  For the FRI Protocol, we have:
+  \begin{equation}
+    \Pr_{x_1 \dots, x_t, z^{(0)}, \dots, z^{(r-1)}} \left[ \epsilon_Q > \alpha^{(0)}(\rho, m) \right]
+    \le \frac{(m + \frac{1}{2})^7 \cdot |\mathcal{D}^{(0)}|^2}{2\rho^{3/2}|\mathbb{F}}
+    + \frac{(2m+1) \cdot \mathcal{D}^{(0)}+1}{\sqrt{\rho}}
+    \cdot \frac{\sum_{i=0}^{r-1} l^{(i)}}{|\mathbb{F}|}
+  \end{equation}
+\end{theorem}
